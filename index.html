@@ -1,0 +1,612 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoopZone - Basketball World</title>
+    <link rel="stylesheet" href="style.css">
+</head><body><nav>
+    <h2>HoopZone 🏀</h2>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#legends">Legends</a></li>
+    <li><a href="#teams">NBA Teams</a></li>
+    <li><a href="#positions">Positions</a></li>
+    <li><a href="#rules">Rules</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+</nav>
+
+<section id="home">
+    <h1>Welcome to HoopZone!</h1>
+    <p>Your ultimate destination for basketball.</p>
+    <a href="#legends" class="explore-btn">Explore Now</a>
+</section>
+<section id="rules">
+    <h2>Basketball Rules</h2><p class="rules-intro">
+    Learn the basic rules of basketball and understand the game better!
+</p>
+
+<div class="rules-container">
+
+ <!-- Dribbling --><div class="rule">
+    <h3>🏀 Dribbling</h3><p>Learn how players move the ball around the court.</p>
+
+<button class="learn-btn" onclick="toggleRule(this)">
+    Learn More +
+</button>
+
+<div class="rule-details">
+    <h4>What is Dribbling?</h4>
+
+    <p>
+        Dribbling is the act of bouncing the basketball
+        with one hand while moving around the court.
+        It allows players to move with the ball and
+        create scoring opportunities.
+    </p>
+
+    <h4>What is Double Dribble?</h4>
+
+    <p>
+        A double dribble violation happens when a player
+        starts dribbling again after ending their dribble
+        and gaining control of the ball, unless an exception
+        under the rules applies.
+    </p>
+
+    <h4>What Happens After a Violation?</h4>
+
+    <p>
+        The opposing team is generally awarded possession
+        of the ball after a double dribble violation.
+    </p>
+
+    <p>
+        <strong>Example:</strong> A player dribbles the ball,
+        catches it with both hands, and then starts
+        dribbling again. This is generally a double dribble.
+    </p>
+</div>
+
+</div>
+
+    <!-- Shot Clock -->
+    <div class="rule">
+        <h3>⏱️ Shot Clock</h3>
+        <p>Teams must attempt a shot before time runs out.</p>
+
+        <button class="learn-btn" onclick="toggleRule(this)">
+            Learn More +
+        </button>
+<div class="rule-details">
+    <h4>What Is the Shot Clock?</h4><p>
+    The shot clock is a timer that limits how long
+    a team can control the ball before attempting a shot.
+    In the NBA, teams generally have 24 seconds to attempt
+    a shot that meets the shot-clock rules.
+</p>
+
+<h4>When Does the Clock Reset?</h4>
+
+<p>
+    The shot clock may reset to 24 seconds after the
+    opposing team gains control of the ball. In certain
+    situations, it can reset to 14 seconds instead.
+    The reset depends on what happens during the play.
+</p>
+
+<h4>What Happens When Time Runs Out?</h4>
+
+<p>
+    If the team fails to attempt a qualifying shot before
+    the shot clock expires, it generally loses possession
+    of the ball.
+</p>
+
+<p>
+    <strong>Example:</strong> A team has 24 seconds to
+    attempt a shot. If the clock reaches zero without
+    a qualifying shot attempt, a shot-clock violation
+    generally occurs.
+</p>
+
+        </div>
+    </div>
+
+    <!-- Fouls -->
+    <div class="rule">
+        <h3>🚫 Fouls</h3>
+        <p>Understand illegal contact during the game.</p>
+
+        <button class="learn-btn" onclick="toggleRule(this)">
+            Learn More +
+        </button>
+
+   <div class="rule-details">
+    <h4>What Is a Foul?</h4><p>
+    A foul happens when a player breaks certain rules
+    involving illegal physical contact or unsportsmanlike
+    behavior during a basketball game.
+</p>
+
+<h4>Types of Fouls</h4>
+
+<p>
+    <strong>Personal Foul:</strong> Illegal physical contact
+    with an opponent, such as pushing or holding.
+</p>
+
+<p>
+    <strong>Offensive Foul:</strong> An illegal contact
+    committed by a player whose team has possession
+    of the ball, such as an illegal charge.
+</p>
+
+<p>
+    <strong>Technical Foul:</strong> A penalty for certain
+    unsportsmanlike conduct or rule violations that do
+    not necessarily involve physical contact.
+</p>
+
+<h4>What Happens After a Foul?</h4>
+
+<p>
+    The penalty depends on the type of foul and the
+    situation. It may result in free throws, a change
+    of possession, or other penalties.
+</p>
+
+<p>
+    <strong>Example:</strong> If a defender illegally
+    pushes an opponent, the referee may call a personal
+    foul.
+</p>
+
+</div>
+    </div>
+
+    <!-- Free Throws -->
+    <div class="rule">
+        <h3>🎯 Free Throws</h3>
+        <p>Learn how players score points from the free-throw line.</p>
+
+        <button class="learn-btn" onclick="toggleRule(this)">
+            Learn More +
+        </button>
+<div class="rule-details">
+    <h4>What Is a Free Throw?</h4><p>
+    A free throw is an unopposed shot taken from the
+    free-throw line after certain fouls or penalties.
+    The player shoots without a defender trying to block
+    the shot directly.
+</p>
+
+<h4>How Many Points Is It Worth?</h4>
+
+<p>
+    Each successful free throw is worth one point.
+    Players may receive one, two, or three free throws,
+    depending on the type of foul and the situation.
+</p>
+
+<h4>Free Throw Rules</h4>
+
+<p>
+    The shooter must stay behind the free-throw line
+    until the ball touches the basket or the backboard.
+    Players must also follow the timing and positioning
+    rules during the attempt.
+</p>
+
+<p>
+    <strong>Example:</strong> If a player makes two free
+    throws, their team scores two points.
+</p>
+
+</div>
+    </div>
+
+    <!-- Out of Bounds -->
+    <div class="rule">
+        <h3>📏 Out of Bounds</h3>
+        <p>Find out what happens when the ball leaves the court.</p>
+
+        <button class="learn-btn" onclick="toggleRule(this)">
+            Learn More +
+        </button>
+
+      <div class="rule-details">
+    <h4>What Is Out of Bounds?</h4><p>
+    The ball is out of bounds when it touches the floor
+    or an object outside the boundary lines, or when
+    a player holding the ball steps on or outside a
+    boundary line.
+</p>
+
+<h4>What Happens When the Ball Goes Out?</h4>
+
+<p>
+    Play stops, and the opposing team generally gets
+    possession of the ball if a player was the last
+    to touch it before it went out of bounds.
+</p>
+
+<h4>How Does Play Restart?</h4>
+
+<p>
+    The team awarded possession usually throws the ball
+    in from outside the court at the designated spot,
+    following the referee's instructions.
+</p>
+
+<p>
+    <strong>Example:</strong> A player passes the ball,
+    but it goes over the sideline without touching
+    another player. The opposing team generally gets
+    the ball.
+</p>
+
+</div>
+    </div>
+
+    <!-- Traveling -->
+    <div class="rule">
+        <h3>🚶 Traveling</h3>
+        <p>Learn about illegal steps while holding the ball.</p>
+
+        <button class="learn-btn" onclick="toggleRule(this)">
+            Learn More +
+        </button>
+
+       <div class="rule-details">
+    <h4>What Is Traveling?</h4><p>
+    Traveling is a violation that occurs when a player
+    holding the ball moves their feet illegally under
+    the rules, such as taking too many steps without
+    dribbling.
+</p>
+
+<h4>What Is the Pivot Foot?</h4>
+
+<p>
+    A pivot foot is the foot a player must keep in
+    contact with the floor, according to the applicable
+    footwork rules, while turning or preparing to pass
+    or shoot.
+</p>
+
+<h4>What Happens After Traveling?</h4>
+
+<p>
+    The opposing team is generally awarded possession
+    of the ball after a traveling violation.
+</p>
+
+<p>
+    <strong>Example:</strong> A player catches the ball,
+    takes several steps without legally dribbling, and
+    commits a traveling violation.
+</p>
+
+</div>
+    </div>
+
+</div>
+
+<section id="legends">
+    <h2>Basketball Legends</h2>
+
+    <div class="legends-container">
+
+        <!-- Michael Jordan -->
+        <div class="player">
+
+           
+
+            <div class="player-info">
+                <h3>Michael Jordan</h3>
+
+                <p>
+                    Michael Jordan is one of the greatest basketball
+                    players of all time. He led the Chicago Bulls to
+                    six NBA championships.
+                </p>
+
+                <div class="player-stats">
+                    <p><strong>Nationality:</strong> American</p>
+                    <p><strong>Team:</strong> Chicago Bulls</p>
+                    <p><strong>Height:</strong> 1.98 m</p>
+                    <p><strong>NBA Points:</strong> 32,292</p>
+                    <p><strong>Position:</strong> shooting guard</p>
+                    <p><strong>NBA Championships:</strong> 6</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LeBron James -->
+        <div class="player">
+
+            
+
+            <div class="player-info">
+                <h3>LeBron James</h3>
+
+                <p>
+                    LeBron James is famous for his scoring,
+                    passing, and all-around basketball skills.
+                </p>
+
+                <div class="player-stats">
+                    <p><strong>Nationality:</strong> American</p>
+                    <p><strong>Team:</strong> Los Angeles Lakers</p>
+                    <p><strong>Height:</strong> 2.06 m</p>
+                    <p><strong>NBA Points:</strong> 43,440+</p>
+                    <p><strong>Position:</strong> Small Ferward</p>
+                    <p><strong>NBA Championships:</strong> 4</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Kobe Bryant -->
+        <div class="player">
+
+          
+
+            <div class="player-info">
+                <h3>Kobe Bryant</h3>
+
+                <p>
+                    Kobe Bryant was a legendary player known for
+                    his incredible skills, hard work, and dedication.
+                </p>
+
+                <div class="player-stats">
+                    <p><strong>Nationality:</strong> American</p>
+                    <p><strong>Team:</strong> Los Angeles Lakers</p>
+                    <p><strong>Height:</strong> 1.98 m</p>
+                    <p><strong>NBA Points:</strong> 33,643</p>
+                    <p><strong>Position:</strong> shooting guard</p>
+                    <p><strong>NBA Championships:</strong> 5</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Stephen Curry --><div class="player"><div class="player-info">
+    <h3>Stephen Curry</h3>
+
+    <p>
+        Stephen Curry is one of the greatest shooters
+        in basketball history. He is famous for his
+        incredible three-point shooting and his impact
+        on the modern game.
+    </p>
+
+    <div class="player-stats">
+        <p><strong>Nationality:</strong> American</p>
+        <p><strong>Team:</strong> Golden State Warriors</p>
+        <p><strong>Height:</strong> 1.88 m</p>
+        <p><strong>NBA Points:</strong> 26,528</p>
+        <p><strong>Position:</strong> Point Guard</p>
+        <p><strong>NBA Championships:</strong> 4</p>
+    </div>
+</div>
+
+</div>
+
+    </div>
+</section>
+
+<section id="teams">
+    <h2>NBA Teams</h2>
+    <p>Explore some of the greatest teams in NBA history.</p>
+
+    <div class="teams-container">
+
+        <div class="team-card">
+            <h3>Los Angeles Lakers</h3>
+            <p>Home of basketball legends.</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Golden State Warriors</h3>
+            <p>Known for their amazing shooting.</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Chicago Bulls</h3>
+            <p>One of the most iconic NBA teams.</p>
+        </div>
+
+    </div>
+</section>
+<section id="positions">
+    <h2>Basketball Positions</h2><p class="positions-intro">
+    Discover the five positions and learn the role of each player!
+</p>
+
+<div class="positions-container">
+
+    <!-- Point Guard -->
+    <div class="position-card">
+        <span class="position-number">01</span>
+        <h3>Point Guard (PG)</h3>
+        <h4>The Playmaker</h4>
+        <p>
+            The point guard organizes the offense,
+            controls the ball, and creates scoring
+            opportunities for teammates.
+        </p>
+        <p><strong>Key Skills:</strong> Passing, Dribbling, Vision</p>
+        <p><strong>Example:</strong> Stephen Curry</p>
+    </div>
+
+    <!-- Shooting Guard -->
+    <div class="position-card">
+        <span class="position-number">02</span>
+        <h3>Shooting Guard (SG)</h3>
+        <h4>The Scorer</h4>
+        <p>
+            The shooting guard focuses on scoring,
+            shooting from distance, and creating
+            opportunities on offense.
+        </p>
+        <p><strong>Key Skills:</strong> Shooting, Scoring, Defense</p>
+        <p><strong>Example:</strong> Kobe Bryant</p>
+    </div>
+
+    <!-- Small Forward -->
+    <div class="position-card">
+        <span class="position-number">03</span>
+        <h3>Small Forward (SF)</h3>
+        <h4>The All-Rounder</h4>
+        <p>
+            The small forward is a versatile player
+            who contributes to scoring, passing,
+            rebounding, and defense.
+        </p>
+        <p><strong>Key Skills:</strong> Agility, Scoring, Defense</p>
+        <p><strong>Example:</strong> LeBron James</p>
+    </div>
+
+    <!-- Power Forward -->
+    <div class="position-card">
+        <span class="position-number">04</span>
+        <h3>Power Forward (PF)</h3>
+        <h4>The Strong Forward</h4>
+        <p>
+            The power forward helps with rebounding,
+            interior scoring, and defending opponents
+            near the basket.
+        </p>
+        <p><strong>Key Skills:</strong> Strength, Rebounding, Defense</p>
+        <p><strong>Example:</strong> Tim Duncan</p>
+    </div>
+
+    <!-- Center -->
+    <div class="position-card">
+        <span class="position-number">05</span>
+        <h3>Center (C)</h3>
+        <h4>The Rim Protector</h4>
+        <p>
+            The center usually plays near the basket,
+            protects the rim, grabs rebounds,
+            and scores close to the hoop.
+        </p>
+        <p><strong>Key Skills:</strong> Blocking, Rebounding, Strength</p>
+        <p><strong>Example:</strong> Shaquille O'Neal</p>
+    </div>
+
+</div>
+<div class="court-section">
+
+    <h3>Basketball Strategies</h3>
+
+    <p>Learn how teams attack and defend on the court.</p>
+
+    <div class="strategies-container">
+
+        <!-- Offense Court -->
+        <div class="strategy-card">
+
+            <h4>OFFENSE 🏀</h4>
+
+            <p>Our team has the ball!</p>
+
+            <div class="basketball-court offense-court">
+
+                <div class="court-center-line"></div>
+                <div class="court-center-circle"></div>
+
+                <div class="court-key court-key-left"></div>
+                <div class="court-key court-key-right"></div>
+
+                <div class="court-three-point court-three-point-left"></div>
+                <div class="court-three-point court-three-point-right"></div>
+
+                <div class="court-basket court-basket-left"></div>
+                <div class="court-basket court-basket-right"></div>
+
+                <div class="court-player pg">PG</div>
+                <div class="court-player sg">SG</div>
+                <div class="court-player sf">SF</div>
+                <div class="court-player pf">PF</div>
+                <div class="court-player center">C</div>
+
+            </div>
+
+            <p class="strategy-description">
+                Players spread out to create scoring opportunities.
+            </p>
+
+        </div>
+
+
+        <!-- Defense Court -->
+        <div class="strategy-card">
+
+            <h4>DEFENSE 🛡️</h4>
+
+            <p>The opponent has the ball!</p>
+
+            <div class="basketball-court defense-court">
+
+                <div class="court-center-line"></div>
+                <div class="court-center-circle"></div>
+
+                <div class="court-key court-key-left"></div>
+                <div class="court-key court-key-right"></div>
+
+                <div class="court-three-point court-three-point-left"></div>
+                <div class="court-three-point court-three-point-right"></div>
+
+                <div class="court-basket court-basket-left"></div>
+                <div class="court-basket court-basket-right"></div>
+
+                <div class="court-player pg">PG</div>
+                <div class="court-player sg">SG</div>
+                <div class="court-player sf">SF</div>
+                <div class="court-player pf">PF</div>
+                <div class="court-player center">C</div>
+
+            </div>
+
+            <p class="strategy-description">
+                Players guard opponents and protect the basket.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+</section>
+<section id="about">
+    <h2>About HoopZone</h2>
+
+    <p>
+        HoopZone is a website for basketball fans.
+        Discover basketball legends, learn the rules,
+        and enjoy the world of basketball!
+    </p>
+</section>
+</body>
+<script>
+function toggleRule(button) {
+    const details = button.nextElementSibling;
+
+    details.classList.toggle("active");
+
+    if (details.classList.contains("active")) {
+        button.textContent = "Show Less −";
+    } else {
+        button.textContent = "Learn More +";
+    }
+}
+</script>
+</script>
+</html>
